@@ -8,4 +8,5 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
 	php composer-setup.php && \
 	php -r "unlink('composer-setup.php');" && \
 	php composer.phar install
+RUN mkdir /usr/src/nextweb/cache
 CMD [ "php", "-S", "0.0.0.0:8000", "-t", "public/" ]
