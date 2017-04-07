@@ -1,2 +1,9 @@
 /cache/
 /config/development/
+/vendor/
+/.idea/
+Homestead.json
+Homestead.yaml
+/composer.phar
+/public/libs/
+/.sass-cache/

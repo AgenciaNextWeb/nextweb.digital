@@ -1,0 +1,16 @@
+{
+    "name": "nextweb/nextweb",
+    "description": "Website da nextweb.digital",
+    "type": "project",
+    "require": {
+        "mailgun/mailgun-php": "^2.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mateus Demboski",
+            "email": "mateus.demboski@digitaldesk.com.br"
+        }
+    ],
+    "minimum-stability": "dev"
+}
