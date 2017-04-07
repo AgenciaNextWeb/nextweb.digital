@@ -1,0 +1,144 @@
+@import "../../libs/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../global/global";
+@import "../includes/header";
+@import "../includes/footer";
+//Title
+.section-title {
+  h2 {
+    font-size: 40px;
+    margin-bottom: 35px;
+    font-weight: 600;
+    position: relative;
+    margin-top: 0;
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 56px;
+      height: 10px;
+      width: 74px;
+      background: $base2;
+      content: "";
+      z-index: 1;
+    }
+  }
+}
+
+//Breadcrumb
+#nw-breadcrumb {
+  margin-top: 90px;
+  background: $black;
+  font-size: 20px;
+  color: $base1;
+  padding: 40px 0;
+  a {
+    color: $base2;
+    text-transform: capitalize;
+  }
+}
+//About us
+.call-to-area {
+  background: url("/image/slider/bg-2.jpg");
+  background-size: cover;
+  padding: 100px 0px;
+  position: relative;
+  z-index: 1;
+  &:after {
+    position: absolute;
+    background: $overlay;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    opacity: 0.7;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+  }
+}
+
+.call-to-area-text {
+  h2 {
+    color: $base1;
+    font-size: 40px;
+    font-weight: 400;
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+  p {
+    color: $base1;
+    margin-bottom: 30px;
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+  a {
+    display: inline-block;
+    color: $base1;
+    padding: 12px 25px;
+    text-transform: capitalize;
+    font-size: 14px;
+    border: 1px solid $base2;
+    background-color: $base2;
+    font-weight: 600;
+    letter-spacing: 1px;
+    &:hover {
+      background: transparent;
+      color: $base1;
+      border: 1px solid $base2;
+      -webkit-transition: .3s;
+      transition: .3s;
+    }
+  }
+}
+#nw-image-area {
+  margin: 50px 0;
+  .about-text {
+    h2 {
+      margin-bottom: 18px;
+      font-size: 40px;
+      font-weight: 400;
+      color: $base2;
+      margin-top: 0;
+      span {
+        color: #fff;
+      }
+    }
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  .margin-top-c {
+    margin-top: 50px;
+  }
+}
+
+//Team
+#nw-team {
+  background-color: $base5;
+  h4 {
+    position: relative;
+    margin-bottom: 20px;
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 25px;
+      height: 7px;
+      width: 74px;
+      background: $base2;
+      content: "";
+      z-index: 1;
+    }
+    span {
+      font-weight: normal;
+      font-size: 0.8em
+    }
+  }
+  p {
+    line-height: 1.4;
+  }
+  ul {
+    padding-left: 15px;
+  }
+}
